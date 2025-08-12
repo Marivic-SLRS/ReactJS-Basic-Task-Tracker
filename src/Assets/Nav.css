@@ -1,0 +1,24 @@
+.navbar {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;  
+  padding: 10px;      
+  width: 98%;
+  height: 10vh;            
+  background: linear-gradient(135deg, #6a11cb, #2575fc); 
+  border-radius: 15px;
+}
+
+.choices{
+  display: flex; 
+  flex-direction: row;  
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.new{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
