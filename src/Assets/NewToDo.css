@@ -1,0 +1,12 @@
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: solid white 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover{
+    background-color: rgb(138, 139, 142);
+    color: white;
+}

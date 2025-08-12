@@ -1,8 +1,11 @@
 import React from 'react'
+import '../Assets/NewToDo.css'
 
 function NewToDo() {
   return (
-    <div>NewToDo</div>
+    <div>
+        <button>+</button>
+    </div>
   )
 }
 

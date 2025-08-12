@@ -11,7 +11,7 @@ function Nav() {
             <p>Completed</p>
         </div>
         <div className='new'>
-        <NewToDo/>
+            <NewToDo/>
         </div>
     </div>
   )

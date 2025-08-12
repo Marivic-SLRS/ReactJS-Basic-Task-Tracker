@@ -1,8 +1,11 @@
 import React from 'react'
+import '../Assets/Todo.css';
 
 function Todo() {
   return (
-    <div>Todo</div>
+    <div className='insides'>
+        Todo
+    </div>
   )
 }
 

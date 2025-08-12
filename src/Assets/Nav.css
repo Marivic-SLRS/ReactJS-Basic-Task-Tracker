@@ -15,10 +15,21 @@
   gap: 20px;
   justify-content: flex-start;
   align-items: center;
+  color: white;
 }
 
 .new{
     display:flex;
     justify-content: flex-end;
     align-items: center;
+    color:white;
+}
+
+
+.choices p {
+  transition: transform 0.3s ease;
+}
+
+.choices p:hover {
+  transform: scale(1.1);
 }
