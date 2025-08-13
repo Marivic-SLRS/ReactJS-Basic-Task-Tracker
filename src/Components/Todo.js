@@ -28,7 +28,7 @@ function Todo() {
   return (
     <div className='insides'>
        {filteredTasks.map((t, i) => (
-        <div key={i}>
+        <div key={i} className='batch'>
           <label>
              <input
               type='checkbox'

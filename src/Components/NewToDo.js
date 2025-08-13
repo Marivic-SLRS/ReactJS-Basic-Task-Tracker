@@ -4,14 +4,13 @@ import  {List}  from '../Content/Content';
 
 
 function NewToDo() {
-
   const {showField, setShowField} = useContext(List);
 
   const ShowInput = (e) => {
     e.preventDefault();
     setShowField(true);
   }
-
+  
   return (
     <div>
         <button onClick={ShowInput}>+</button>
@@ -25,7 +24,7 @@ function NewToDo() {
 
 function InputField(){
   const  {task, setTask , input , setInput,setShowField} = useContext(List);
-
+  
   const AddTask = (e) =>{
     e.preventDefault();
     setTask( (task) => [

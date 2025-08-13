@@ -11,19 +11,22 @@ function App() {
   const [input , setInput] = useState('');
   const [showField , setShowField] = useState(false);
   const [filter , setFilter] = useState('all');
-
+  const head = {
+    color: 'white',
+  };
 
   return (
-    <div className='card'>
+    <>
+    <h1 style={head}>Basic Task Tracker</h1>
+     <div className='card'>
       <List.Provider value={{task, setTask, input, setInput, showField , setShowField, filter , setFilter}}>
         <Nav/> 
         <Todo/>
       </List.Provider>
-       
+    </div>  
     
-    </div>
-    
-  
+    </>
+   
   )
 }
 

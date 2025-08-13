@@ -3,4 +3,10 @@
     width: 98%;
     height: 75%;
     padding: 10px;
+    overflow-x: auto;
+    max-height: 75%;
+}
+
+.batch{
+    padding: 10px;
 }

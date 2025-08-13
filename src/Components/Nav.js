@@ -7,7 +7,7 @@ import { useContext } from 'react';
 
 function Nav() {
 
-  const {task, setFilter} = useContext(List);
+  const {setFilter} = useContext(List);
 
   const Pending = (e) => {
     e.preventDefault();
