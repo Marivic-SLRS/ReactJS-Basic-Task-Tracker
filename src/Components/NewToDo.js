@@ -10,15 +10,11 @@ function NewToDo() {
   const ShowInput = (e) => {
     e.preventDefault();
     setShowField(true);
-
-    
   }
 
   return (
     <div>
         <button onClick={ShowInput}>+</button>
-        
-
         {showField &&
         <InputField/>
         }
@@ -28,15 +24,16 @@ function NewToDo() {
 
 
 function InputField(){
-  const  {setTask , input , setInput} = useContext(List);
+  const  {task, setTask , input , setInput,setShowField} = useContext(List);
 
   const AddTask = (e) =>{
     e.preventDefault();
     setTask( (task) => [
         ...task, {name:input , completed: false}
     ]);
-    console.log('g');
-    setInput('');
+    console.log(task);
+    setInput(' ');
+    setShowField(false);
   }
 
   return(
