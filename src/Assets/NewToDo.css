@@ -12,12 +12,37 @@ button:hover{
 }
 
 .Inputfield{
-    display: flex;
-    position:relative;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-  
     color: black;
-
-
 }
+
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; 
+}
+
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  max-width: 90%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+
+.Inputfield input {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+}
+

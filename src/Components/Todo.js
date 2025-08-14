@@ -8,13 +8,12 @@ function Todo() {
   const {task,setTask,filter} = useContext(List);
 
 
-  const filteredTasks = task.filter(t => {
-    if (filter === "all") return true;
-    if (filter === "pending") return !t.completed;
-    if (filter === "completed") return t.completed;
-    return true;
-  });
-  
+  const filteredTasks = task.filter( t => {
+    if (filter === 'all') return true;
+    if (filter === 'pending') return !t.completed;
+    if (filter === 'completed') return t.completed;
+  })
+
   const toggleCompleted = (i) => {
     const tasks = [...task];
     tasks[i] = {

@@ -15,7 +15,11 @@ function NewToDo() {
     <div>
         <button onClick={ShowInput}>+</button>
         {showField &&
-        <InputField/>
+          <div className="modal-backdrop" onClick={() => setShowField(false)}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <InputField/>
+            </div>
+          </div>
         }
     </div>
   )
